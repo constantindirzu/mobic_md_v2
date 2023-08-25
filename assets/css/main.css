@@ -1874,10 +1874,25 @@ section {
   width: 100%;
   position: relative;
   background: var(--color-primary);
- /* background-image: url("../img/bg_header.jpg") ;*/
+
   background-position: center;
   padding: 60px 0 0 0;
   
+}
+
+.contactPage{
+  background-image: url("../img/maps_bg_2.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+ 
+}
+.mainhome{
+  background-image: url("../img/bg_header_6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 1365px) {
