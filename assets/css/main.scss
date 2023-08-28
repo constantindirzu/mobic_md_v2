@@ -1049,7 +1049,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-    background: #00b6a1;
+    background: #F7E987;
 }
 
 .services .service-item:hover h3 {
@@ -1515,7 +1515,7 @@ section {
         }
 
     }
-    
+
 }
 
 /*--------------------------------------------------------------
@@ -1949,9 +1949,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Hero Section
+  # Box Section
   --------------------------------------------------------------*/
-.hero {
+.boxSection {
     width: 100%;
     position: relative;
     background: var(--color-primary);
@@ -2031,13 +2031,18 @@ section {
         //
         --border-size: 3px;
         --border-angle: 0turn;
+       // background-image: conic-gradient(from var(--border-angle),
+         //       #213,
+           //     #112 50%,
+             //   #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+
         background-image: conic-gradient(from var(--border-angle),
-                #213,
-                #112 50%,
-                #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+            #2C3333,
+            #112 50%,
+            #2C3333), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
 
 
-
+        opacity: 0.91;
         //
 
 
@@ -2109,26 +2114,35 @@ section {
     background-size: cover;
 }
 
+.mainhome video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 @media (min-width: 1365px) {
-    .hero {
+    .boxSection {
         background-attachment: fixed;
     }
 }
 
 
 @media (max-width: 640px) {
-    .hero h2 {
+    .boxSection h2 {
         font-size: 36px;
     }
 
-    .hero .btn-get-started,
-    .hero .btn-watch-video {
+    .boxSection .btn-get-started,
+    .boxSection .btn-watch-video {
         font-size: 14px;
     }
 }
 
 @media (min-width: 1200px) {
-    .hero .icon-boxes:before {
+    .boxSection .icon-boxes:before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -2139,8 +2153,8 @@ section {
     }
 }
 
-.hero .icon-box:hover .title a,
-.hero .icon-box:hover .icon {
+.boxSection .icon-box:hover .title a,
+.boxSection .icon-box:hover .icon {
     color: #fff;
 }
 
