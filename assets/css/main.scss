@@ -191,7 +191,7 @@ section {
     }
 
     &:hover {
-        background: rgba(248, 90, 64, 0.8);
+        background: #2c3333;
         color: #fff;
     }
     &.active {
@@ -255,7 +255,7 @@ section {
   --------------------------------------------------------------*/
 
 .topbar {
-    background: #1450A3;
+    background: #333342;
     height: 40px;
     font-size: 14px;
     transition: all 0.5s;
@@ -617,7 +617,7 @@ section {
         content: "";
         position: fixed;
         inset: 0;
-        background: rgba(0, 106, 93, 0.8);
+        background: rgba(7, 54, 107, 0.8);
         z-index: 9996;
     }
 }
