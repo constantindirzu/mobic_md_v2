@@ -2508,3 +2508,22 @@ section {
         height: 400px;
     }
 }
+
+
+
+.icon-box-det{
+    display: flex;
+    i{
+        font-size: 44px;
+        line-height: 44px;
+        color: #0245bc;
+        margin-right: 15px;    
+    }
+    h4{
+        color: #0245bc; 
+    }
+    p{
+        font-size: 15px;
+        color: #848484;   
+    }
+}
