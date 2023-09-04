@@ -106,111 +106,91 @@
   </header><!-- End Header -->
   <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="boxSection" class="boxSection contactPage">
-    <div class="container position-relative">
-      <div class="row gy-5" data-aos="fade-in">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Как вы нас найдете?</h2>
-          <p>Получите консультацию эксперта и стоимость проекта</p>
-
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-          <!--<img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">-->
-        </div>
-      </div>
-    </div>
-
-
-    </div>
-  </section>
-  <!-- End Hero Section -->
-
+  
   <main id="main ">
 
     <!-- ======= Contact Section ======= -->
     <section id="contact " class="contact">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Контакты</h2>
-          <p>Напишите нам с вопросами или по поводу предложение и мы будем рады вам ответить.</p>
-        </div>
+        
 
         <div class="row gx-lg-0 gy-4">
 
-          <div class="col-lg-4">
+          <div class="section-header">
+            <h2>Контакты</h2>
+            <p>Напишите нам с вопросами или по поводу предложение и мы будем рады вам ответить.</p>
+          </div>
+          
+          <div class="row gy-5 gx-lg-5">
 
-            <div class="info-container d-flex flex-column align-items-center justify-content-center">
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Офис:</h4>
-                  <p>str. Liviu Deleanu 10/6, Chisinau, Moldova</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Почта:</h4>
-                  <p>mobic@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Телефон:</h4>
-                  <p>+373 22 808 100</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-clock flex-shrink-0"></i>
-                <div>
-                  <h4>График работы:</h4>
-                  <p>Пон-Пятн: 08:00 - 17:00</p>
-                </div>
-              </div><!-- End Info Item -->
+            <div class="col-lg-4">
+  
+              <div class="info-container">
+                
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Location:</h4>
+                    <p>str. Liviu Deleanu 10/6, of 18, Chisinau, Moldova</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p>mobic@gmail.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Phone:</h4>
+                    <p>+373 22 808 100</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+              </div>
+  
             </div>
-
-          </div>
-
-          <div class="col-lg-8 ps-1 ">
-            <!--<form action="forms/contact2.php" method="post" role="form" class="php-email-form">-->
-            <form action="forms/contact.php" method="post" role="form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Ваше Имя" required>
+  
+            <div class="col-lg-8">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Почта" required>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Напишите сообщение"
-                  required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Загрузка</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Ваше сообщение было отправлено. Спасибо!</div>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Отправить</button>
-              </div>
-            </form>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div><!-- End Contact Form -->
+  
           </div>
-          <!-- End Contact Form -->
 
         </div>
 
       </div>
     </section><!-- End Contact Section -->
+
+
+   
 
   </main><!-- End #main -->
 
