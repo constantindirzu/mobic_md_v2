@@ -1,10 +1,8 @@
-/**
-* Template Name: Impact
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+"use strict";
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -293,3 +291,45 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 });
+
+//Contact Form
+const forms = document.forms;
+if(forms.length){
+  for(const form of forms){
+    form.addEventListener('submit', formSubmitAction);
+    
+  }
+
+}
+
+async function formSubmitAction(e){
+  
+  e.preventDefault();
+  
+  const form = e.target;
+
+  const formAction = form.getAttribute('action') ? form.getAttribute('action').trim() : "#";
+  const formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : "GET";
+  const formData = new FormData(form);
+
+  form.classList.add('form-sending');
+
+  const response = await fetch(formAction,{
+    method:formMethod, 
+    body: formData
+  })
+
+  if (response.ok){
+    alert('Form sent!')
+    form.classList.remove('form-sending');
+
+    form.reset();
+    
+  } else {
+    alert('error');
+    form.classList.remove('form-sending');
+  }
+
+
+
+}
