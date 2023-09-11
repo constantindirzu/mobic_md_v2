@@ -23,6 +23,7 @@
 body {
     font-family: var(--font-default);
     color: var(--color-default);
+    
 }
 
 a {
@@ -3249,4 +3250,10 @@ section {
 .form-sending{
     opacity: 0.5;
     pointer-events: none;
+}
+
+//redirect_tank_message
+.master-wrap{
+    
+    
 }
