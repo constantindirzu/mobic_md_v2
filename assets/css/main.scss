@@ -240,7 +240,7 @@ section {
 
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
-        transition-delay: 0 !important;
+        transition-delay: 0s !important;
     }
 }
 
@@ -830,7 +830,7 @@ section {
                     text-decoration: none;
                     overflow: hidden;
                     color: #fff;
-                    font-weight: 400px;
+                    font-weight: 400;
                     z-index: 1;
                     transition: 0.5s;
                     backdrop-filter: blur(15px);
