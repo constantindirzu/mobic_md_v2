@@ -209,8 +209,8 @@ section {
   # Header
   --------------------------------------------------------------*/
 .topbar {
-  background: #337CCF;
-  height: 40px;
+  background: #384a8a;
+  height: 3.14vh;
   font-size: 14px;
   transition: all 0.5s;
   color: #fff;
@@ -259,8 +259,8 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  height: 55px;
-  background-color: var(--color-primary);
+  height: 6.28vh;
+  background: #384a8a;
 }
 
 .header.sticked {
@@ -290,7 +290,7 @@ section {
 }
 
 .sticked-header-offset {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 section {
@@ -1280,8 +1280,13 @@ section {
   width: 100%;
   position: relative;
   background: var(--color-primary);
-  background-position: center;
+  background: #0a53be;
+  min-height: 90.58vh;
   padding: 60px 0 0 0;
+  background-image: url("../img/797272.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
 }
 .boxSection h2 {
   font-size: 48px;
@@ -1382,15 +1387,28 @@ section {
     --border-angle: 1turn;
   }
 }
-.boxSection .icon-boxes {
-  padding-bottom: 60px;
+.boxSection .secondSectionBoxImg img {
+  max-height: 750px;
 }
-.boxSection .secondSectionBoxImg {
+.boxSection .content-box {
+  background: #384989;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.2) 100%);
+  z-index: 1;
+  animation: borderRadiuse 5s alternate-reverse infinite;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+@keyframes borderRadiuse {
+  from {
+    border-radius: 35% 65% 60% 40%/41% 30% 70% 59%;
+    box-shadow: 0.1vmin 1vmin rgba(255, 255, 255, 0.0705882353);
+  }
+  to {
+    border-radius: 28% 72% 28% 72%/60% 31% 69% 40%;
+    box-shadow: 1vmin 1vmin rgba(255, 255, 255, 0.0705882353);
+  }
+}
 .contactPage {
   background-image: url("../img/maps_bg_2.png");
   background-position: center;
@@ -1399,24 +1417,12 @@ section {
   padding: 0px 0px 0px 0px;
 }
 
-.mainhome {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/patterns/1.jpg");
-}
-.mainhome video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 @media (min-width: 1365px) {
   .boxSection {
     background-attachment: fixed;
+  }
+  .secondSectionBoxImg {
+    display: flex;
   }
 }
 @media (max-width: 640px) {
@@ -1435,8 +1441,14 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    height: calc(50% + 20px);
-    background-color: rgb(245, 245, 245);
+  }
+}
+@media (max-width: 1364px) {
+  .secondSectionBoxImg {
+    display: none;
+  }
+  .content-box {
+    min-height: 750px;
   }
 }
 .boxSection .icon-box:hover .title a,
