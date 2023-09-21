@@ -1509,6 +1509,7 @@ section {
   # Box Section
   --------------------------------------------------------------*/
 .boxSection {
+
     width: 100%;
     position: relative;
     background: var(--color-primary);
@@ -1522,6 +1523,15 @@ section {
     background-size: cover;
 
     display: flex;
+
+    .container_home{
+        max-height: 100%;
+        .container_home1{
+            display: flex;
+            height: 100%;
+        }
+    }
+
 
 
     h2 {
@@ -1683,13 +1693,18 @@ section {
 
 
     .secondSectionBoxImg {
-       // display: flex;
+        display: flex;
         //justify-content: center;
         //align-items: center;
         //visibility: hidden;
         //display: none;
+        max-height:100%;
         img{
-            max-height: 750px;
+            //max-height:100%;
+            max-width: 650px;
+           // border: 1px solid black;
+            position: absolute;
+            bottom: 0;
         }
 
     }
@@ -1704,11 +1719,10 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
+        //height: 100%;
     }
 
-    .row-presentation-header{
-       // max-height: 400px;
-    }
+
 
 
 
@@ -1716,6 +1730,7 @@ section {
 
 
 @keyframes borderRadiuse {
+
     from {
         border-radius: 35% 65% 60% 40% / 41% 30% 70% 59% ;
         box-shadow: 0.1vmin 1vmin #ffffff12;
@@ -1743,7 +1758,7 @@ section {
         background-attachment: fixed;
     }
     .secondSectionBoxImg{
-        display:flex ;
+       // display:flex ;
     }
 }
 
