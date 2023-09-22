@@ -2256,6 +2256,95 @@ section {
   width: 100%;
 }
 
+/*--------------------------------------------------------------Features 2*/
+.section-features2 {
+  color: black;
+  --bgColor: rgba(245, 245, 245);
+  background: var(--bgColor);
+}
+.section-features2 img {
+  max-width: 100%;
+}
+.section-features2 .main-timeline {
+  overflow: hidden;
+  position: relative;
+  padding: 15px;
+  min-height: 320px;
+  min-width: 370px;
+}
+.section-features2 .main-timeline .timeline {
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+.section-features2 .main-timeline .timeline:after, .section-features2 .main-timeline .timeline:before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  display: block;
+  clear: both;
+}
+.section-features2 .main-timeline .timeline-content {
+  float: right;
+  padding: 0 0 30px 30px;
+  margin-right: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.section-features2 .main-timeline .timeline-content-right {
+  float: left;
+  padding: 0 30px 30px 0px;
+  margin-left: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.section-features2 .main-timeline .title-timeline {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #384a8a;
+  text-align: center;
+}
+.section-features2 .main-timeline .content-inner-left {
+  padding: 35px 15px 35px 35px;
+  margin-right: -15px;
+  background: #384a8a;
+  border-radius: 150px 0 0 150px;
+  position: relative;
+}
+.section-features2 .main-timeline .content-inner-right {
+  padding: 35px 35px 35px 15px;
+  margin-left: -15px;
+  background: #384a8a;
+  border-radius: 0px 150px 150px 0px;
+  position: relative;
+}
+.section-features2 .main-timeline .title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 5px;
+}
+.section-features2 .main-timeline .description {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  min-height: 150px;
+}
+.section-features2 .imga {
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .col-section-image {
+    display: none;
+    visibility: hidden;
+  }
+}
 .card-about {
   border-radius: 20px;
   border: 1px solid #000;

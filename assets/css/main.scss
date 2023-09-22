@@ -2771,6 +2771,122 @@ section {
 
 //ebdFeature
 
+/*--------------------------------------------------------------Features 2*/
+.section-features2{
+
+    color: black;
+    --bgColor: rgba(245, 245, 245);
+    background: var(--bgColor);
+    img{
+        max-width: 100%;
+    }
+
+    .main-timeline{
+
+        overflow:hidden;
+        position:relative;
+        padding: 15px;
+        min-height: 320px;
+        min-width: 370px;
+
+        .timeline{
+            //width:50%;
+            float:right;
+            position:relative;
+            z-index:1;
+
+
+            &:after, &:before{
+                position:absolute;
+                top:50%;content:"";
+                display:block;
+                clear:both;
+            }
+
+        }
+
+        .timeline-content{
+
+            float:right;
+            padding:0 0 30px 30px;
+            margin-right:15px;
+            background:#fff;
+            border-radius:10px;
+            box-shadow:3px 3px 5px 6px #ccc;
+
+        }
+
+        .timeline-content-right{
+
+            float:left;
+            padding:0 30px 30px 0px;
+            margin-left:15px;
+            background:#fff;
+            border-radius:10px;
+            box-shadow:3px 3px 5px 6px #ccc;
+        }
+
+        .title-timeline{
+            display:block;
+            font-size:28px;
+            font-weight:700;
+            color:#384a8a;
+            text-align:center;
+        }
+
+        .content-inner-left{
+            padding:35px 15px 35px 35px;
+            margin-right:-15px;
+            background:#384a8a;
+            border-radius:150px 0 0 150px;
+            position:relative;
+        }
+
+        .content-inner-right{
+            padding:35px 35px 35px 15px;
+            margin-left:-15px;
+            background:#384a8a;
+            border-radius:0px 150px 150px 0px;
+            position:relative;
+        }
+
+        .title{
+            font-size:22px;
+            font-weight:700;
+            color:#fff;
+            margin:0 0 5px;
+        }
+
+        .description{
+            display: flex;
+            justify-content: center;
+            font-size:14px;
+            color:#fff;
+            margin:0;
+            min-height: 150px;
+        }
+
+    }
+
+    .imga{
+        margin: auto;
+    }
+
+
+
+
+}
+
+@media (max-width: 1200px) {
+
+    .col-section-image{
+        display: none;
+        visibility: hidden;
+    }
+
+
+}
+
 
 .card-about {
     border-radius: 20px;
