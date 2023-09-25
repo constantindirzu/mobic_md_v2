@@ -540,7 +540,6 @@ section {
   # About Us Section
   --------------------------------------------------------------*/
 .about .card .cover {
-  background-image: url("../img/mesh.png");
   overflow: hidden;
 }
 .about .card .cover .card-header {
@@ -629,7 +628,6 @@ section {
   # Call To Action Section
   --------------------------------------------------------------*/
 .call-to-action .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta_bg1.jpg") center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
@@ -1424,7 +1422,6 @@ section {
   }
 }
 .contactPage {
-  background-image: url("../img/maps_bg_2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
