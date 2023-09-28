@@ -501,6 +501,7 @@ section {
   # Mobile Navigation
   --------------------------------------------------------------*/
 @media (max-width: 1279px) {
+
     .navbar {
         position: fixed;
         top: 0;
@@ -510,18 +511,27 @@ section {
         bottom: 0;
         transition: 0.3s;
         z-index: 9997;
+
+        ul {
+            position: absolute;
+            inset: 0;
+            padding: 50px 0 10px 0;
+            margin: 0;
+            background: #1450A3;
+            overflow-y: auto;
+            transition: 0.3s;
+            z-index: 9998;
+        }
+
     }
 
-    .navbar ul {
-        position: absolute;
-        inset: 0;
-        padding: 50px 0 10px 0;
-        margin: 0;
-        background: #1450A3;
-        overflow-y: auto;
-        transition: 0.3s;
-        z-index: 9998;
+    .logo{
+
+        margin: auto;
+
     }
+
+
 
     .navbar a,
     .navbar a:focus {
@@ -1526,6 +1536,7 @@ section {
 
     .container_home{
         max-height: 100%;
+
         .container_home1{
             display: flex;
             height: 100%;
@@ -1687,24 +1698,20 @@ section {
         }
     }
 
-    .icon-boxes {
-        //padding-bottom: 20px;
-    }
 
 
     .secondSectionBoxImg {
         display: flex;
-        //justify-content: center;
-        //align-items: center;
-        //visibility: hidden;
-        //display: none;
+
         max-height:100%;
+        max-width: 100%;
         img{
             //max-height:100%;
             max-width: 650px;
            // border: 1px solid black;
             position: absolute;
             bottom: 0;
+            margin: auto;
         }
 
     }
@@ -1728,6 +1735,21 @@ section {
 
 }
 
+@media (max-width: 1400px){
+    .secondSectionBoxImg{
+        img{
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .secondSectionBoxImg{
+        visibility: hidden;
+    }
+    
+}
 
 @keyframes borderRadiuse {
 
@@ -2413,6 +2435,9 @@ section {
     padding: 50px 0;
     color: white;
 
+
+
+
     .footer-info {
 
         .logo {
@@ -2882,38 +2907,108 @@ section {
 
 .section-features3{
 
-    --bgColor: rgba(245, 245, 245);
-    background: var(--bgColor);
+    font-family: 'Roboto', sans-serif;
+    //font-family: 'Poppins', sans-serif;
+
+    background: #f1f1f1;
+    border-bottom: 1px solid black;
+
+
+
+
+    .section-header{
+        padding-bottom: 30px;
+    }
+
     .col-section-feature{
-      //  border: 1px solid black;
+
+
+
+       //border: 1px solid black;
 
         .title-timeline{
             display: flex;
             align-items: center;
-            justify-content: center;
+            //justify-content: center;
 
             h3{
                // border: 1px solid black;
                 width: 100%;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                font-weight: bolder;
+                //justify-content: center;
+                //align-items: center;
+
             }
+
         }
+
+        .content-inner{
+
+            .list-group{
+                margin-left: 48px;
+                background-color: transparent;
+                .list-group-item{
+
+                    background-color: transparent;
+                    font-size: 14px;
+                    color: white;
+                    border: none;
+                    text-align: center;
+
+                }
+            }
+
+
+        }
+
+
     }
 
     .col-section-image{
         //border: 1px solid black;
-        max-height: 60rem;
+        max-height: 45rem;
+        min-height: 500px;
+        align-items: end;
+        justify-content: center;
         img{
             max-width: 100%;
-            max-height: 100%;
+           max-height: 100%;
+        //   // height: 650px;
         }
+
+
     }
 
-    .content-inner-left{
-        margin-left: 60px;
+    .img-circle-features{
+        width:64px;
+        //border: 1px solid black;
+        border-radius: 50%;
+        padding: 10px;
+        //background: #5c86cb;
     }
+
+    .col_grid_1{
+
+        background-color: #373738;
+        color: white;
+
+    }
+
+    .col_grid_2{
+
+        background-color: #736f6f;
+        color: white;
+
+    }
+
+    .col_grid_3{
+
+        background-color: #938351;
+        color: white;
+    }
+
+
 
 
 
@@ -2921,6 +3016,178 @@ section {
 
 /**********************************/
 
+/***section-featuresm**/
+
+.section-featuresm{
+
+    background-color: #f1f1f1;
+
+    .features__img{
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 650px;
+        }
+    }
+
+
+    .border-right-bottom{
+        border-right: 1px solid rgba(202, 195, 195, 0.3);
+        border-bottom: 1px solid rgba(202, 195, 195, 0.3);
+    }
+
+    .border-left-bottom{
+        border-left: 1px solid rgba(202, 195, 195, 0.3);
+        border-bottom: 1px solid rgba(202, 195, 195, 0.3);
+    }
+
+    .card-reverse{
+        //border: 1px solid black;
+        height: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color:rgba(202, 195, 195, 0.3) ;
+
+
+
+
+        .card-features{
+            width: 100%;
+            height: 100%;
+
+
+            transition: 0.8s;
+            transform-style: preserve-3d;
+
+            transform-origin: right;
+            //color: #f1f1f1;
+
+
+            .card-front, .card-back {
+                backface-visibility: hidden;
+                position: absolute;
+                overflow: hidden;
+                transition: transform 0.6s linear;
+                padding: 1px;
+            }
+
+            .card-front {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transform: perspective(600px) rotateY(0deg);
+                background-color: #f1f1f1;
+
+                .title__feature-card{
+
+                   width: 100%;
+                   text-align: center;
+                    margin-top: 16px;
+
+                    img{
+                        margin: auto;
+                        max-width: 64px;
+                        max-height: 64px;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                    }
+
+                }
+
+
+            }
+
+            .card-back {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: perspective(600px) rotateY(180deg);
+                background-color: #3F72AF;
+                color: white;
+                .content-inner{
+                    .list-group {
+                        background-color: transparent;
+                        .list-group-item{
+                            background-color: transparent;
+                            border: none;
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+
+            &:hover > .card-front{
+                transform: perspective(600px) rotateY(-180deg);
+            }
+
+            &:hover > .card-back {
+                transform: perspective(600px) rotateY(0deg);
+            }
+
+
+
+        }
+
+
+
+    }
+
+
+}
+
+//@media (max-width: 1200px) {
+//    .features__img{
+//        visibility: hidden;
+//    }
+//}
+
+
+/***section-FirstStep**/
+.section-first-step{
+
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+
+    .row-first-step__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 128px;
+            height: 128px;
+            margin: 18px;
+
+        }
+
+
+    }
+
+    h4{
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    .section-header{
+        margin-top: -20px;
+    }
+
+}
 
 
 .card-about {
