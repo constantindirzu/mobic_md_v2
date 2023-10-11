@@ -1295,6 +1295,7 @@ section {
 .boxSection .container_home .container_home1 {
   display: flex;
   height: 100%;
+  overflow: hidden;
 }
 .boxSection h2 {
   font-size: 48px;
@@ -1414,6 +1415,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.boxSection .content-box .content-box-info {
+  z-index: 1;
 }
 
 @media (max-width: 1400px) {
